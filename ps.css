@@ -1,0 +1,839 @@
+@font-face {
+    font-family: "Clarendon";
+    src: url("Clarendon\ Regular.otf") format("opentype");
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+}
+
+/*------------------------ Barre SONY --------------------*/
+
+.barre-sony {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    height: 36px;
+}
+
+.barre-sony a {
+    color: white;
+}
+
+
+.barre-sony .sny {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "Clarendon";
+    font-size: 17px;
+    margin-top: 8px;
+    margin-right: 5px;
+    letter-spacing: 2px;
+    font-stretch: expanded;
+}
+
+/*----------------------- Navbar PS -------------------*/
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 36px;
+    height: 70px;
+}
+
+.logo-menu .logo-ps {
+    margin-top: 12px;
+    width: 58px;
+    margin-left: 15px;
+}
+
+.logo-menu {
+    display: flex;
+}
+
+.logo-menu ul {
+    display: flex;
+}
+
+.logo-menu ul li {
+    margin: 20px;
+}
+
+.logo-menu ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.logo-menu ul li a:hover {
+    color: rgb(65, 130, 250);
+}
+
+.logo-menu i {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.logo-menu i:hover {
+    color: rgb(65, 130, 250);
+}
+
+/*--------------------------------- Menu 2 -------------------------*/
+
+.menu2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18px;
+}
+
+.menu2 .cnx {
+    border-radius: 20px;
+    margin: 15px;
+    padding: 6px;
+    font-size: 18px;
+    border: transparent;
+    color: white;
+    background: rgb(65, 130, 250);
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.menu2 .cnx:hover {
+    background-color: rgba(22, 65, 146, 0.856);
+}
+
+.barre-search {
+    border: 1px solid rgba(0, 0, 0, 0.055);
+    margin-right: 20px;
+}
+
+.barre-search:hover {
+    border: 1px solid black;
+}
+
+.barre-search input {
+    padding: 15px;
+    width: 150px;
+    cursor: pointer;
+    border: 0px;
+    outline: 0px;
+}
+
+::placeholder {
+    color: black;
+    font-size: 18px;
+}
+
+.barre-search #sch {
+    font-size: 17px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/*--------------------------- FC24 ----------------------*/
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+#fc24 {
+    width: 100%;
+}
+
+.fc-game {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 265px;
+    margin-left: 130px;
+}
+
+#lgfc24 {
+    width: 500px;
+    margin-left: 20px;
+}
+
+.desc1,
+.prec {
+    color: white;
+    margin: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.desc1 {
+    font-size: 2.5em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.prec {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.btn-fc {
+    color: white;
+    background: orangered;
+    border: 2px solid black;
+    width: 295px;
+    border-radius: 28px;
+    margin: 15px;
+    padding: 12px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-fc:hover {
+    box-shadow: 0px 0px 0px 2px orangered;
+}
+
+/*--------------------------- Card & Choix de jeux -----------------------*/
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+}
+
+.card .carte1 {
+    margin: 7px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.card .carte1:hover {
+    opacity: unset;
+    transition: opacity 0.3s ease-out;
+}
+
+.sp {
+    transition: 0.2s ease-out;
+}
+
+.sp:hover {
+    transform: translateY(-15px);
+}
+
+.eafc {
+    transition: 0.2s ease-out;
+}
+
+.eafc:hover {
+    transform: translateY(-15px);
+}
+
+.hell {
+    transition: 0.2s ease-out;
+}
+
+.hell:hover {
+    transform: translateY(-15px);
+}
+
+.ps {
+    transition: 0.2s ease-out;
+}
+
+.ps:hover {
+    transform: translateY(-15px);
+}
+
+.tof {
+    transition: 0.2s ease-out;
+}
+
+.tof:hover {
+    transform: translateY(-15px);
+}
+
+.cb {
+    transition: 0.2s ease-out;
+}
+
+.cb:hover {
+    transform: translateY(-15px);
+}
+
+/*----------------------------- Console PS5 -------------------------*/
+
+.console-ps5 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+}
+
+#ps5 {
+    width: 820px;
+    margin-left: 800px;
+}
+
+.titre-ps5 {
+    margin-left: 160px;
+    margin-top: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.csl-ps5 {
+    font-size: 32px;
+    font-weight: lighter;
+    margin: 15px;
+    color: rgba(0, 0, 0, 0.822);
+}
+
+.desc-ps5 {
+    font-size: 21px;
+    margin-left: 15px;
+    color: grey;
+}
+
+.btn-ps5 {
+    margin-left: 175px;
+    margin-top: 25px;
+}
+
+.esp {
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+    background: rgb(65, 130, 250);
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.esp:hover {
+    box-shadow: 0px 0px 0px 2px rgb(65, 130, 250);
+}
+
+.ach {
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 19px;
+    cursor: pointer;
+    color: white;
+    background: orangered;
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.ach:hover {
+    box-shadow: 0px 0px 0px 2px orangered;
+}
+
+/*--------------------- Accessoire PS5 -----------------------*/
+
+.card2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card2 .carte2 {
+    margin: 15px;
+    opacity: 0.7;
+    transition: 0.2s ease-out;
+}
+
+.card2 .carte2:hover {
+    opacity: unset;
+}
+
+/*------------------------ Casque VR ------------------------*/
+
+.vr-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+#cvr {
+    width: 100%;
+}
+
+.vr-game {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 2350px;
+    margin-left: 130px;
+}
+
+.titre-vr,
+.desc2 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titre-vr {
+    font-size: 35px;
+    margin: 15px;
+}
+
+.desc2 {
+    margin: 15px;
+    line-height: 25px;
+}
+
+.btn-vr {
+    margin-left: 15px;
+}
+
+.pi-vr {
+    margin: 10px;
+    border-radius: 25px;
+    border: 2px solid black;
+    font-size: 18px;
+    padding: 10px;
+    width: 130px;
+    font-weight: bold;
+    color: white;
+    background: rgb(65, 130, 250);
+    cursor: pointer;
+}
+
+.pi-vr:hover {
+    box-shadow: 0px 0px 0px 2px rgb(65, 130, 250);
+}
+
+.ach-vr {
+    border-radius: 25px;
+    border: 2px solid black;
+    font-size: 18px;
+    padding: 10px;
+    width: 200px;
+    font-weight: bold;
+    color: white;
+    background: orangered;
+    cursor: pointer;
+}
+
+.ach-vr:hover {
+    box-shadow: 0px 0px 0px 2px orangered;
+}
+
+/*-------------------------- Jeux PS4 & PS5 ---------------------------*/
+
+.game-container {
+    position: relative;
+    display: inline-block;
+}
+
+#gameps {
+    width: 100%;
+}
+
+.ps4-ps5 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 22%;
+    top: 2880px;
+}
+
+.titre-game {
+    color: white;
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-game {
+    background: rgb(20, 20, 20);
+    padding: 0;
+    border-radius: 25px;
+    margin: 25px;
+    transition: 0.5s ease-out;
+}
+
+
+.btn-game:hover {
+    box-shadow: -1px 8px 13px 0px #000000c9;
+    transition: 0.5s ease-out;
+}
+
+.nouv-game,
+.bd-game {
+    border-radius: 25px;
+    padding: 17px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nouv-game:focus {
+    background: white;
+    border-radius: 30px;
+    color: black;
+    border: solid 1px white;
+    transition: 0.7s ease-out;
+}
+
+.bd-game:focus {
+    background: white;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    border: solid 1px white;
+    transition: 0.7s ease-out;
+}
+
+/*------------------------------ Card des jeux PS4 & PS5 ------------------------------*/
+
+.card3 {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    margin-top: 13%;
+}
+
+.carte3 {
+    margin: 8px;
+    transition: transform .1s;
+}
+
+.carte3:hover {
+    transform: scale(1.1);
+}
+
+.titre-card3 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    transform-origin: 0 0;
+}
+
+/*---------------------------- PS SHARE --------------------------*/
+
+.psshare-container {
+    position: relative;
+    display: inline-block;
+}
+
+#bgrey {
+    width: 100%;
+}
+
+.info-share {
+    position: absolute;
+    top: 0;
+    margin-top: 3800px;
+    text-align: center;
+    margin-left: 170px;
+}
+
+.titre-share {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin: 20px;
+    font-weight: lighter;
+}
+
+.desc-share {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    line-height: 35px;
+}
+
+
+.card4 {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    margin-top: 270px;
+    margin-left: 40px;
+}
+
+.carte4 {
+    margin: 10px;
+}
+
+.carte4:hover {
+    filter: brightness(25%);
+}
+
+.am-sh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Le texte est initialement caché */
+    margin-top: 220px;
+    margin-left: 120px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.carte4:hover .am-sh {
+    opacity: 1; /* Le texte apparaît lorsque la carte est survolée */
+    color: white;
+}
+
+/*----------------------------- PS Store ---------------------------*/
+
+
+.ps-store {
+    display: flex;
+}
+
+.psl {
+    width: 400px;
+}
+
+.info-ps {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+.store-titre {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-left: 30px;
+    line-height: 1.5em;
+}
+
+.store-desc {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    color: grey;
+    margin: 30px;
+    line-height: 1.5em;
+}
+
+.btn-pstore {
+    background: orangered;
+    color: white;
+    border-radius: 25px;
+    border: solid 2px white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    width: 225px;
+    padding: 10px;
+    margin-left: 33px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.btn-pstore:hover {
+    box-shadow: 0px 0px 0px 2px orangered;
+}
+
+.red-ps {
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+/*-------------------------- Boutique PS ------------------------*/
+
+.boutique-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 80px;
+}
+
+#fond-bt {
+    width: 100%;
+}
+
+.info-bt {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 0;
+    margin-left: 180px;
+    top: 50px;
+}
+
+#pgear {
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+.titre-bt {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.desc-bt {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(177, 177, 177);
+    line-height: 1.5;
+}
+
+/*------------------------- Card de la Boutique PS ---------------------------*/
+
+.card5 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 450px;
+    margin-left: 130px;
+}
+
+.carte5 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    margin: 15px;
+}
+
+.bt {
+    height: 250px;
+    width: 70%;
+}
+
+.at-bt {
+    margin-top: 50px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.abt {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    border: 0;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 25px;
+    background: orangered;
+    color: white;
+    padding: 10px;
+    margin-top: 120px;
+    cursor: pointer;
+}
+
+.abt-sp {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    border: 0;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 25px;
+    background: orangered;
+    color: white;
+    padding: 10px;
+    margin-top: 95px;
+    cursor: pointer;
+}
+
+.abt:hover {
+    box-shadow: 0px 0px 0px 2px orangered;
+}
+
+.abt-sp:hover {
+    box-shadow: 0px 0px 0px 2px orangered;
+}
+
+.dcv {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border: solid 2px black;
+    border-radius: 25px;
+    padding: 12px;
+    color: black;
+    top: 1080px;
+    margin-left: 44%;
+    cursor: pointer;
+}
+
+.dcv:hover {
+    box-shadow: 0px 0px 0px 2px rgb(255, 255, 255);
+}
+
+
+/*----------------------- Actualités PS -----------------------*/
+
+
+.actu-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 900px;
+}
+
+.titre-actu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
