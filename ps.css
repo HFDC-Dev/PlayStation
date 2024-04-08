@@ -892,6 +892,48 @@ body {
     right: 10px;
   }
 
+  /* Reseaux sociaux */
+
+.social_section {
+    background-color: rgba(196, 196, 196, 0.219);
+    height: 450px;
+}
+
+.social_content {
+    text-align: center;
+}
+
+.social_title {
+    position: relative;
+    top: 60px; 
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.social {
+    font-size: 5rem;
+    margin-top: 150px;
+}
+
+.social i {
+    margin: 20px;
+    font-size: 90px;
+    color: rgb(53, 53, 53);
+    transition: transform 0.3s ease;
+}
+
+.fa-x-twitter:hover,.fa-facebook-f:hover,.fa-instagram:hover,.fa-youtube:hover {
+    transform: scale(1.02);
+}
+
+/* Bas de page */
+
+
+
+
+
+
+
 
 
 

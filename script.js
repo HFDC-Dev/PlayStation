@@ -26,7 +26,7 @@ btnLeft.addEventListener('click', () => {
     }
 });
 
-// Événement pour le bouton de défilement vers la gauche
+// Événement pour le bouton de défilement vers la droite
 btnRight.addEventListener('click', () => {
     scrollContainer.scrollLeft -= containerWidth;
     if (scrollContainer.scrollLeft <= 0) {
