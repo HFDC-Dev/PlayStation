@@ -1,8 +1,9 @@
 @font-face {
     font-family: "Clarendon";
     src: url("Clarendon\ Regular.otf") format("opentype");
-  }
+}
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
     margin: 0;
@@ -895,7 +896,7 @@ body {
   /* Reseaux sociaux */
 
 .social_section {
-    background-color: rgba(196, 196, 196, 0.219);
+    background-color: #f5f7fa;
     height: 450px;
 }
 
@@ -912,7 +913,7 @@ body {
 
 .social {
     font-size: 5rem;
-    margin-top: 150px;
+    margin-top: 140px;
 }
 
 .social i {
@@ -928,9 +929,130 @@ body {
 
 /* Bas de page */
 
+footer {
+    margin-top: 50px;
+    height: 670px;
+    background-color: #00439c;
+}
 
+.ps_footer img {
+    margin-top: 20px;
+    width: 320px;
+    margin-left: 90px;
+}
 
+.horizontal-bar-wrapper {
+    margin-left: 90px; 
+    margin-right: 90px; 
+    margin-top: 15px;
+  }
+  
+.horizontal-bar {
+    border: none;
+    height: 1px;
+    background-color: #ffffff44; 
+  }
 
+/* Les liens du footer */
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 180px;
+    margin-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    font-family: "PT Sans", sans-serif;
+    line-height: 30px;
+}
+
+.footer-links a {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.footer-links a:hover {
+    color: rgba(255, 255, 255, 0.651);
+}
+
+.titre-link {
+    font-family: "PT Sans", sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-links i {
+    margin: 10px;
+    font-size: 30px;
+}
+
+/* Sony Interactive Entertainment */
+
+.sie-logo img {
+    margin-top: 14px;
+    margin-left: 70px;
+    width: 300px;
+}
+
+.desc-sie {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    margin-left: 90px;
+    color: white;
+    line-height: 23px;
+    font-weight: lighter;
+}
+
+/* Conditions d'utilisation */ 
+
+.footer-cond {
+    margin-top: 20px;
+}
+
+.cond-links {
+   display: flex;
+   justify-content: space-between;
+}
+
+.cond-links a {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 100px;
+    color: white;
+    line-height: 23px;
+}
+
+.cond-links a i {
+    margin: 8px;
+}
+
+.cond-pol-links {
+    display: flex;
+    margin-right: 70px;
+}
+
+.cond-pol-links a {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    margin: 0 45px;
+    color: white;
+}
+
+.cond-pol-links a:hover {
+    color: rgba(255, 255, 255, 0.651);
+}
+
+.barre {
+    margin-top: 13px;
+    color: white;
+}
 
 
 
